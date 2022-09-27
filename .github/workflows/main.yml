@@ -27,5 +27,10 @@ jobs:
         uses: actions/setup-node@v3.5.0
         with:
           node-version: 16.17.1
+          
+      - name: Instalação do Mocha para teste
+        run: |
+          cd src;
+          
 
      
