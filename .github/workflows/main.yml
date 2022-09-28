@@ -28,9 +28,10 @@ jobs:
         with:
           node-version: 16.17.1
           
-      - name: Instalação do Mocha para teste
+      - name: Instalação do Mocha e dos pacotes para teste
         run: |
           cd src;
+          npm install -g mocha
+          npm install
           
-
      
