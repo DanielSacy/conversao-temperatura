@@ -50,7 +50,7 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            danielsacy/conv-temp-devops:v1
+            danielsacy/conv-temp-devops: ${{github.run_number}}
             danielsacy/conv-temp-devops:latest
         
           
