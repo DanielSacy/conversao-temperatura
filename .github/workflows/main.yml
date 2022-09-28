@@ -37,5 +37,15 @@ jobs:
       - name: Execução do teste
         run: mocha src/test/convert.js
         
+      - name: Building Docker image
+        uses: docker/build-push-action@v3.1.1
+        with: 
+          context: src
+          file: src/Dockerfile
+          push: true
+          tags: |
+            danielsacy/conv-temp-devops:v1
+            danielsacy/conv-temp-devops:latest
+        
           
      
